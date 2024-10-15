@@ -34,3 +34,12 @@ module "ec2" {
   private_security_group = module.security_group.private_security_group_id
   key_name              = "AWS"
 }
+
+module "route_table" {
+  source = "./modules/route_table"
+  vpc_id = module.vpc.vpc_id
+  public_subnet_id = module.subnet.public_subnet_id
+  private_subnet_id = module.subnet.private_subnet_id
+  nat_gateway_id = module.nat_gateway.nat_gateway_id
+  igw_ip = module.vpc.igw_id
+}
