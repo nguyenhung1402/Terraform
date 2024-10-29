@@ -46,3 +46,10 @@ variable "private_cidr_block" {
   default = "10.0.2.0/24"
   nullable = false
 }
+
+variable "availability_zone" {
+  description = "Availability Zone"
+  type        = string 
+  default = "ap-southeast-1a"
+  nullable = false
+}
