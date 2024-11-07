@@ -27,12 +27,12 @@ resource "aws_instance" "private_instance" {
   key_name      = var.key_name
   ebs_optimized = true 
   monitoring = true
-  
+
   root_block_device {
     encrypted = true
   }
   metadata_options {
-    http_tokens = "required"  # Yêu cầu sử dụng IMDSv2
+    http_tokens = "required"  # Yêu cầu sử dụng IMDSv
     http_endpoint = "enabled"
   }
   tags = {
