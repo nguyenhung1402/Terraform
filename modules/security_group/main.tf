@@ -14,6 +14,7 @@ resource "aws_security_group" "public_ec2_sg" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  description = "Allow SSH from anywhere"
   tags = {
     Name = "public_ec2_sg"
   }
@@ -35,6 +36,7 @@ resource "aws_security_group" "private_ec2_sg" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  description = "Allow SSH from public_ec2_sg"
   tags = {
     Name = "private_ec2_sg"
   }

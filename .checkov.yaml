@@ -1,7 +1,0 @@
-skip-checks:
-  - CKV_AWS_79  # Bỏ qua IMDSv1
-  - CKV_AWS_135 # Bỏ qua EBS tối ưu hóa
-  - CKV_AWS_126 # Bỏ qua giám sát chi tiết
-  - CKV_AWS_8   # Bỏ qua mã hóa EBS
-  - CKV_AWS_23  # Bỏ qua Thêm mô tả cho nhóm bảo mật
-  - CKV_AWS_130 # Đảm bảo các subnet không tự động gán IP
