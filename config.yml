@@ -1,4 +1,4 @@
-skip_checks:
+skip-check:
   - CKV_AWS_23    # Skip check for security group rules with no description
   - CKV_AWS_5     # Skip check for security groups not attached to resources
   - CKV_AWS_12    # Skip check for VPC default security group allowing all traffic
