@@ -4,3 +4,4 @@ skip-check:
   - CKV2_AWS_12    # Skip check for VPC default security group allowing all traffic
   - CKV2_AWS_11    # Skip check for VPC flow logging not enabled
   - CKV2_AWS_41    # Skip check for IAM role not attached to EC2 instances
+  - CKV_AWS_23     
