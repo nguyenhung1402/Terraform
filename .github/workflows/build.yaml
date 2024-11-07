@@ -39,7 +39,7 @@ jobs:
       - name: Run Checkov for security compliance
         run: |
           pip install checkov
-          checkov -d . --quiet
+          checkov -d . 
 
       - name: Terraform Plan
         run: terraform plan -out=tfplan
