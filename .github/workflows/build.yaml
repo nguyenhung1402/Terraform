@@ -39,7 +39,7 @@ jobs:
       - name: Run Checkov for security compliance
         run: |
           pip install checkov
-          checkov -d . --skip-check CKV_AWS_23 --skip-check CKV_AWS_5 --skip-check CKV_AWS_12 --skip-check CKV_AWS_11 --skip-check CKV_AWS_41 --quiet
+          checkov -d . --skip-check CKV_AWS_23 CKV_AWS_5 CKV_AWS_12 CKV_AWS_11 CKV_AWS_41 --quiet
 
       - name: Terraform Plan
         run: terraform plan -out=tfplan
