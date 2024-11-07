@@ -16,6 +16,6 @@ variable "private_cidr_block" {
 variable "availability_zone" {
   description = "Availability Zone"
   type        = string
-  default     = "ap-southeast-1a"
+  default     = "us-east-1a"
 }
 
