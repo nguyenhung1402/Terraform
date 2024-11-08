@@ -1,7 +1,7 @@
 variable "ami" {
   description = "ID của AMI"
   type        = string
-  default     = "ami-01811d4912b4ccb26"
+  default     = "ami-0866a3c8686eaeeba"
   nullable = false
 }
 
